@@ -942,8 +942,8 @@ label {
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 70px;
+    width: 70px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -1007,11 +1007,11 @@ label {
 }
 
 .slick-next {
-    right: 64px;
+    right: 22px;
 }
 
 [dir="rtl"] .slick-next {
-    left: 64px;
+    left: 22px;
     right: auto;
     z-index: 2;
 }
