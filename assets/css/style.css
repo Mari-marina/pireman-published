@@ -758,7 +758,7 @@ label {
 
 .storage {
     position: relative;
-    background-image: url(./../images/storage.png);
+    background-image: url(./../images/storage.webp);
     background-position-x: right;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -972,7 +972,7 @@ label {
 }
 
 .delivery {
-    background-image: url(./../images/delivery.png);
+    background-image: url(./../images/delivery.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
