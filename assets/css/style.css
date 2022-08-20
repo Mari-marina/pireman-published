@@ -1162,6 +1162,75 @@ label {
     }
 }
 
+.seminars__btn {
+    max-width: 310px;
+    width: 100%;
+    height: 56px;
+    border: none;
+    background: #ffbd03;
+    color: #1b1b1c;
+    font-family: "Nunito Sans";
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.seminars__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 1180px) {
+    .seminars__title {
+        margin: 100px 0 50px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.seminars__title_bold {
+    font-weight: 700;
+}
+
+.seminars__wrap {
+    margin-bottom: 50px;
+}
+
+.seminars__img {
+    max-width: 678px;
+    width: 100%;
+    height: 700px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media all and (max-width: 1180px) {
+    .seminars__img {
+        height: 100%;
+    }
+}
+
+.seminars__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media all and (max-width: 1180px) {
+    .seminars__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
