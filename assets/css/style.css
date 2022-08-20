@@ -372,7 +372,7 @@ body {
 }
 
 .container {
-    max-width: 1284px;
+    max-width: 1350px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -1038,6 +1038,14 @@ label {
     margin-right: 20px;
 }
 
+@media all and (max-width: 1180px) {
+    .orders__title {
+        margin: 100px 0 50px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
 .orders__title_bold {
     font-weight: 700;
 }
@@ -1051,9 +1059,107 @@ label {
     align-items: center;
 }
 
+@media all and (max-width: 1180px) {
+    .orders__wrap {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .orders__img {
     max-width: 678px;
     width: 100%;
+}
+
+@media all and (max-width: 1180px) {
+    .orders__img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 500px;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .orders__img {
+        height: 350px;
+    }
+}
+
+.stock {
+    background: #2c2c2c;
+}
+
+.stock__video {
+    max-height: 710px;
+    height: 100%;
+}
+
+@media all and (max-width: 850px) {
+    .stock__video {
+        max-width: 439px;
+        width: 100%;
+    }
+}
+
+.stock__title {
+    color: #ffbd03;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 605px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 850px) {
+    .stock__title {
+        line-height: 1;
+    }
+}
+
+.stock__title_bold {
+    font-weight: 700;
+}
+
+.stock__button {
+    max-width: 230px;
+    width: 100%;
+    height: 56px;
+    border: none;
+    background: #ffbd03;
+    color: #1b1b1c;
+    font-family: "Nunito Sans";
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.stock__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 850px) {
+    .stock__wrapper {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+}
+
+.stock__wrap {
+    padding: 0 10px 0 20px;
+}
+
+@media all and (max-width: 850px) {
+    .stock__wrap {
+        max-width: 440px;
+        margin: 30px 0;
+    }
 }
 
 /* Slider */
