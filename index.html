@@ -117,7 +117,8 @@
     <section class="stock">
         <div class="container">
             <div class="stock__wrapper">
-                <video class="stock__video" id="vid" src="./assets/video/stock.mp4" muted playsinline loop autoplay></video>
+                <video class="stock__video" id="vid" src="./assets/video/stock.mp4" muted playsinline loop
+                    autoplay></video>
                 <div class="stock__wrap">
                     <h2 class="stock__title">Проводим регулярные <span class="stock__title_bold">акции и конкурсы с
                             подарками.
@@ -135,7 +136,8 @@
                             Проводим полезные семинары</span>для усиления своих
                         партнеров</h2>
                     <a class="seminars__link" href="#" download="">
-                        <button class="seminars__btn">СКАЧАТЬ ЗАПИСЬ СЕМИНАРА <i class="seminars__download"></i></button>
+                        <button class="seminars__btn">СКАЧАТЬ ЗАПИСЬ СЕМИНАРА <i
+                                class="seminars__download"></i></button>
                     </a>
                 </div>
                 <img class="seminars__img" src="./assets/images/seminars.webp" alt="">
@@ -144,34 +146,59 @@
     </section>
     <section class="cooperation">
         <div class="cooperation__wrapper">
-        <div class="cooperation__wrap">
-        <h2 class="cooperation__title">Мы работаем с 1996 года! <br>
-            Приглашаем Вас к долгосрочному сотрудничеству</h2>
+            <div class="cooperation__wrap">
+                <h2 class="cooperation__title">Мы работаем с 1996 года! <br>
+                    Приглашаем Вас к долгосрочному сотрудничеству</h2>
+            </div>
         </div>
-    </div>
     </section>
     <section class="centers">
         <div class="container">
+            <h2 class="centers__title">Наши инженерные центры:</h2>
             <div class="centers__wrapper">
-                <div class="centers__krasnodar">
-                    <h3 class="container__title"></h3>
-                    <div style="position:relative;overflow:hidden;"><a
-                            href="https://yandex.by/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
-                            href="https://yandex.by/maps/35/krasnodar/house/uralskaya_ulitsa_212_2/Z0AYdwZmTUwFQFpvfXx1cn5qZg==/?ll=39.116790%2C45.043375&utm_medium=mapframe&utm_source=maps&z=17"
-                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Уральская улица, 212/2 на
-                            карте Краснодара — Яндекс Карты</a><iframe
-                            src="https://yandex.by/map-widget/v1/-/CCUR6LeTtC" width="560" height="400" frameborder="1"
-                            allowfullscreen="true" style="position:relative;"></iframe></div>
+                <div class="centers__city">
+                    <div class="centers__wrap">
+                        <h3 class="centers__subtitle">Краснодар, Автомобильная, 13</h3>
+                        <div class="centers__map" style="position:relative; overflow:hidden;"><a
+                                href="https://yandex.by/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                href="https://yandex.by/maps/35/krasnodar/house/uralskaya_ulitsa_212_2/Z0AYdwZmTUwFQFpvfXx1cn5qZg==/?ll=39.116790%2C45.043375&utm_medium=mapframe&utm_source=maps&z=17"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Уральская улица, 212/2 на
+                                карте Краснодара — Яндекс Карты</a><iframe
+                                src="https://yandex.by/map-widget/v1/-/CCUR6LeTtC" width="400" height="180" 
+                                frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                        <p class="centers__text">Режим работы:</p>
+                        <span class="centers__span">Понедельник - Пятница - с 8:00 до 18:00</span><br>
+                        <span class="centers__span">Суббота - с 9:00 до 14:00</span><br>
+                        <u class="centers__span">Воскресенье - выходной</u>
+                        <p class="centers__text">Телефон: <a href="tel:89898146636" class="centers__phone">
+                                8 (989) 814-66-36
+                            </a> </p>
+                        <button class="centers__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                    </div>
+                    <div class="centers__slider">
+                        <div class="centers__images">
+                            <img class="centers__img" src="./assets/images/krasnodar/1.webp" alt="">
+                        </div>
+                        <div class="centers__images">
+                            <img class="centers__img" src="./assets/images/krasnodar/2.webp" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script type="text/javascript">
+        $('.centers__slider').slick({
+            slidesToShow: 1,
+            infinite: true,
+            slidesToScroll: 1,
+        });
+    </script>
 
     <script type="text/javascript">
         $(document).ready(function () {
