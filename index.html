@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="header__nav nav">
             <div class="container">
                 <div class="nav__wrapper">
@@ -46,17 +46,17 @@
                     <h1 class="header__title">Материалы для отопления и водоснабжения оптовикам и монтажникам</h1>
                     <h2 class="header__subtitle">Узнай цену прямо сейчас</h2>
                     <form action="" class="header__form">
-                        <div class="form-group">
-                            <label class="header__form-label" for="first">Имя</label>
-                            <input id="first" class="form-input" type="text" />
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Имя">
+                            <label class="placeholder">Имя</label>    
                         </div>
-                        <div class="form-group">
-                            <label class="header__form-label" for="first">Email*</label>
-                            <input id="first" class="form-input" type="text" />
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="Email*">
+                            <label for="email" class="placeholder">Email*</label>    
                         </div>
-                        <div class="form-group">
-                            <label class="header__form-label" for="first">Телефон*</label>
-                            <input id="first" class="form-input" type="text" />
+                        <div class="input-group">
+                            <input type="tel" class="input" placeholder="Телефон*">
+                            <label class="placeholder">Телефон*</label>    
                         </div>
                         <button class="header__button">УЗНАТЬ ЦЕНУ</button>
                     </form>
@@ -284,7 +284,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-            <img class="footer__logo" src="./assets/images/logo.webp" alt="logo">
+            <a href="#top">
+                <img class="footer__logo" src="./assets/images/logo.webp" alt="logo">
+            </a>
             <div class="footer__wrap">
                 <p class="footer__text">Телефон:</p>
                 <a href="tel:89898146636" class="footer__phone">
@@ -352,21 +354,6 @@
                 ],
             });
         });
-    </script>
-    <script type="text/javascript">
-        $('input').focus(function () {
-            $(this).parents('.form-group').addClass('focused');
-        });
-
-        $('input').blur(function () {
-            var inputValue = $(this).val();
-            if (inputValue == "") {
-                $(this).removeClass('filled');
-                $(this).parents('.form-group').removeClass('focused');
-            } else {
-                $(this).addClass('filled');
-            }
-        })
     </script>
 </body>
 

@@ -498,6 +498,12 @@ body {
     }
 }
 
+@media all and (max-width: 440px) {
+    .header__title {
+        line-height: 1.2;
+    }
+}
+
 .header__subtitle {
     font-size: 36px;
     line-height: 1.2;
@@ -526,7 +532,7 @@ body {
     -o-border-radius: 4px;
 }
 
-@media all and (max-width: 1030px) {
+@media all and (max-width: 930px) {
     .header__button {
         margin-top: 20px;
         max-width: 300px;
@@ -572,55 +578,76 @@ label {
     color: transparent;
 }
 
-.form-group {
+.input-group {
     position: relative;
 }
 
 @media all and (max-width: 930px) {
-    .form-group {
+    .input-group {
         margin-top: 24px;
     }
 }
 
-.form-group + .form-group {
-    margin-top: 30px;
-}
-
-.header__form-label {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    color: #999;
+.input {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
     background-color: transparent;
-    z-index: 10;
-    transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
-    transition: transform 150ms ease-out, font-size 150ms ease-out;
-    transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+    border-bottom: 1px solid #ffffff;
 }
 
-.focused .header__form-label {
-    -webkit-transform: translateY(-125%);
-    transform: translateY(-125%);
-    font-size: .75em;
+.placeholder {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #ffffff;
+    transition: 0.3s;
+    pointer-events: none;
 }
 
-.form-input {
-    position: relative;
-    padding: 12px 0px 5px 0;
-    width: 200px;
-    outline: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: 0 1px 0 0 #e5e5e5;
-    transition: box-shadow 150ms ease-out;
+input:not(:-moz-placeholder-shown) + label {
+    top: -10px;
+    color: #dfdcdc;
+    background-color: transparent;
 }
 
-.form-input:focus {
-    box-shadow: 0 2px 0 0 #ffbd03;
+input:not(:-ms-input-placeholder) + label {
+    top: -10px;
+    color: #dfdcdc;
+    background-color: transparent;
 }
 
-.form-input.filled {
-    box-shadow: 0 2px 0 0 lightgreen;
+.input:focus + .placeholder, input:not(:placeholder-shown) + label {
+    top: -10px;
+    color: #dfdcdc;
+    background-color: transparent;
+}
+
+.input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.input::-moz-placeholder {
+    color: transparent;
+}
+
+.input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.input::placeholder {
+    color: transparent;
 }
 
 .nav {
@@ -788,7 +815,7 @@ label {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.2;
-    margin-left: 30px;
+    margin-left: 10px;
     max-width: 736px;
     width: 100%;
 }
@@ -995,6 +1022,12 @@ label {
     }
 }
 
+@media all and (max-width: 440px) {
+    .delivery__wrap {
+        padding: 110px 0 300px;
+    }
+}
+
 .delivery__title {
     color: #ffffff;
     font-weight: 700;
@@ -1013,6 +1046,12 @@ label {
 @media all and (max-width: 450px) {
     .delivery__title {
         margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .delivery__title {
+        font-size: 30px;
     }
 }
 
@@ -1344,6 +1383,10 @@ label {
     }
 }
 
+.centers__city:last-child {
+    padding-bottom: 40px;
+}
+
 .centers__img {
     height: 490px;
 }
@@ -1483,7 +1526,7 @@ label {
 
 @media all and (max-width: 880px) {
     .footer__list {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
@@ -1667,6 +1710,14 @@ label {
     outline: none;
 }
 
+@media all and (max-width: 880px) {
+    .slick-prev,
+    .slick-next {
+        height: 50px;
+        width: 50px;
+    }
+}
+
 .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
@@ -1697,9 +1748,22 @@ label {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@media all and (max-width: 880px) {
+    .slick-prev:before,
+      .slick-next:before {
+        font-size: 48px;
+    }
+}
+
 .slick-prev {
     z-index: 3;
     left: 22px;
+}
+
+@media all and (max-width: 880px) {
+    .slick-prev {
+        left: 8px;
+    }
 }
 
 [dir="rtl"] .slick-prev {
@@ -1718,6 +1782,12 @@ label {
 
 .slick-next {
     right: 22px;
+}
+
+@media all and (max-width: 880px) {
+    .slick-next {
+        right: 8px;
+    }
 }
 
 [dir="rtl"] .slick-next {
