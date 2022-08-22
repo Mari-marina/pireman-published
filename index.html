@@ -111,7 +111,7 @@
             <div class="delivery__wrap">
                 <h2 class="delivery__title">Бесплатно доставим товар до вашего склада или прямо на объект в день заказа
                 </h2>
-                <button class="delivery__button">ОФОРМИТЬ ДОСТАВКУ</button>
+                <button class="delivery__button" id="modalOpen-delivery">ОФОРМИТЬ ДОСТАВКУ</button>
             </div>
         </div>
     </section>
@@ -330,7 +330,7 @@
                         href="https://yandex.by/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
                         href="https://yandex.by/maps/35/krasnodar/?ll=39.057868%2C45.067727&mode=routes&rtext=45.092150%2C38.999244~45.043292%2C39.116492&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM5ODA0MRKPAdCg0L7RgdGB0LjRjywg0JrRgNCw0YHQvdC%2B0LTQsNGALCDQn9GA0LjQutGD0LHQsNC90YHQutC40Lkg0LLQvdGD0YLRgNC40LPQvtGA0L7QtNGB0LrQvtC5INC%2B0LrRgNGD0LMsINCQ0LLRgtC%2B0LzQvtCx0LjQu9GM0L3QsNGPINGD0LvQuNGG0LAsIDEzIgoNO%2F8bQhVcXjRC~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMTM2NTM0NTY4EkbQoNC%2B0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0KPRgNCw0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDIxMi8yIgoNSnccQhVVLDRC&utm_medium=mapframe&utm_source=maps&z=13.52"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe class="inframe-modal"
                         src="https://yandex.by/map-widget/v1/-/CCURnTB3WA" width="400" height="224" frameborder="1"
                         allowfullscreen="true" style="position:relative;"></iframe></div>
                 <div class="modal__wrap">
@@ -352,7 +352,7 @@
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Новороссийск</a><a
                         href="https://yandex.by/maps/970/novorossiysk/house/ulitsa_lenina_22/Z04YcQVmSEEEQFpufXt1eXtlbA==/?ll=37.726142%2C44.748768&utm_medium=mapframe&utm_source=maps&z=16.65"
                         style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 22 —
-                        Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCURnTuxlC" width="400"
+                        Яндекс Карты</a> <iframe class="inframe-modal" src="https://yandex.by/map-widget/v1/-/CCURnTuxlC" width="400"
                         height="224" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 <div class="modal__wrap">
                     <h2 class="modal__subtitle">Наши магазины в Новороссийске:</h2>
@@ -372,7 +372,7 @@
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a
                         href="https://yandex.by/maps/39/rostov-na-donu/house/ulitsa_vavilova_71v/Z0AYcA9jSkEAQFptfX52eH9kZg==/?ll=39.683347%2C47.279373&utm_medium=mapframe&utm_source=maps&z=16.65"
                         style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Вавилова, 71В —
-                        Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCURnTBSHD" width="400"
+                        Яндекс Карты</a><iframe class="inframe-modal" src="https://yandex.by/map-widget/v1/-/CCURnTBSHD" width="400"
                         height="224" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 <div class="modal__wrap">
                     <h2 class="modal__subtitle">Наши магазины в Ростове-на-Дону:</h2>
@@ -428,6 +428,38 @@
                     href="https://pipeman.ru/files/421560_policy.pdf?1603286546">персональных данных</a> </p>
             </div>
             <img class="modal-form__img" src="./assets/images/form.webp" alt="">
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-form_delivery">
+        <div class="modal-form__wrapper_second">
+            <div class="modal-header__form">
+                <img class="close-btn9" src="./assets/images/icons/cross.png" alt="">
+                <div class="modal-form__content">
+                <div class="modal-form__wrap">
+                <h3 class="modal-form__title_second">Записаться на встречу</h3>
+                <form class="modal-form__form" action="">
+                    <span class="modal-form__label" for="">Имя*</span>
+                    <input class="modal-form_second-input" type="text">
+                    <span class="modal-form__label" for="">Телефон*</span>
+                    <input class="modal-form_second-input" type="tel">
+                    <span class="modal-form__label" for="">Город*</span>
+                    <input class="modal-form_second-input" type="text">
+                    <span class="modal-form__label" for="">Дата и время</span>
+                    <input class="modal-form__label modal-form__label-data"  type="date" id="start" name="trip-start"
+                       min="2022-01-01" max="2050-12-31">
+                </form>
+                    <form class="modal-form__form_checkbox">
+                        <input class="modal-form__checkbox" id="html" type="checkbox">
+                        <label class="modal-form__label-checkbox" for="html">Я принимаю пользовательское соглашение и cогласен с политикой конфиденциальности *</label>
+                      </form>
+                <button class="modal-form_second-bottom">Отправить</button>
+                <p class="modal-form__text">Нажимая на кнопку, вы даете согласие на обработку <a
+                    class="modal-form__text__link"
+                    href="https://pipeman.ru/files/421560_policy.pdf?1603286546">персональных данных</a> </p>
+            </div>
+            <img class="modal-form__img modal-form__img-deliv" src="./assets/images/deliv.webp" alt="">
         </div>
             </div>
         </div>

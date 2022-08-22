@@ -91,4 +91,20 @@ window.addEventListener("click", function (event) {
     modalFormSecond.style.display = "none";
   }
 });
+
+let openModalBtn9 = document.getElementById("modalOpen-delivery");
+let modalFormDelivery = document.querySelector(".modal-form_delivery");
+let closeModalBtn9 = document.querySelector(".close-btn9");
+
+openModalBtn9.addEventListener("click", function () {
+  modalFormDelivery.style.display = "flex";
+});
+closeModalBtn9.addEventListener("click", function () {
+  modalFormDelivery.style.display = "none";
+});
+window.addEventListener("click", function (event) {
+  if (event.target === modalFormDelivery) {
+    modalFormDelivery.style.display = "none";
+  }
+});
 //# sourceMappingURL=script.js.map
