@@ -1623,6 +1623,7 @@ input:not(:-ms-input-placeholder) + label {
 .modal-form_second,
 .modal-form_delivery {
     background: rgba(14, 7, 7, 0.8);
+    overflow-y: scroll;
     display: none;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1692,6 +1693,17 @@ input:not(:-ms-input-placeholder) + label {
   .modal-form_second__text,
   .modal-form_delivery__text {
     margin-bottom: 10px;
+}
+
+@media all and (max-width: 840px) {
+    .modal__text,
+      .modal-novorossiysk__text,
+      .modal-rostov__text,
+      .modal-form__text,
+      .modal-form_second__text,
+      .modal-form_delivery__text {
+        margin-bottom: 6px;
+    }
 }
 
 .modal__map,
@@ -1808,8 +1820,12 @@ input:not(:-ms-input-placeholder) + label {
 .modal-form__img {
     max-width: 400px;
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+}
+
+@media all and (max-width: 840px) {
+    .modal-form__img {
+        display: none;
+    }
 }
 
 .modal-form__wrapper, .modal-form__wrapper_second {
@@ -1870,6 +1886,12 @@ input:not(:-ms-input-placeholder) + label {
     }
 }
 
+@media all and (max-width: 400px) {
+    .modal-form__title_second {
+        margin: 10px 0 10px;
+    }
+}
+
 .modal-form__label {
     color: #1b1b1c;
 }
@@ -1906,6 +1928,12 @@ input:not(:-ms-input-placeholder) + label {
     color: rgba(37, 37, 37, 0.742);
     font-family: "Raleway-Light";
     padding-bottom: 30px;
+}
+
+@media all and (max-width: 840px) {
+    .modal-form__text {
+        padding-bottom: 10px;
+    }
 }
 
 .modal-form__text__link {
@@ -1950,10 +1978,6 @@ input:not(:-ms-input-placeholder) + label {
         -ms-flex-align: center;
         align-items: center;
     }
-}
-
-.modal-form__img-deliv {
-    max-width: 445px;
 }
 
 .modal-form_second-input {
@@ -2014,6 +2038,12 @@ input:not(:-ms-input-placeholder) + label {
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
+}
+
+.modal-form__wrapper_second
+.modal-form__wrapper,
+.modal-header__form {
+    overflow-y: auto;
 }
 
 /* Slider */
